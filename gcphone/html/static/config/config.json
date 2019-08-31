@@ -1,0 +1,328 @@
+{
+  "reseau": "GLG",
+  "warningMessageCount": 500,
+  "themeColor": "#303f9f",
+  "colors": [
+    "#EF5350",
+    "#EC407A",
+    "#AB47BC",
+    "#7E57C2",
+    "#5C6BC0",
+    "#42A5F5",
+    "#29B6F6",
+    "#26C6DA",
+    "#26A69A",
+    "#66BB6A",
+    "#9CCC65",
+    "#D4E157",
+    "#FFCA28",
+    "#FFA726",
+    "#FF7043",
+    "#8D6E63",
+    "#78909C"
+  ],
+
+  "useFormatNumberFrance": false,
+
+  "useWebRTCVocal": true,
+  "RTCConfig": {
+    "iceServers": [
+      {
+        "urls": [ "turn:gta.greenleafrp.com:3478?transport=udp" ],
+        "username": "glg",
+        "credential": "eatass"
+      }
+    ]
+  },
+
+
+  "background": {
+    "Green Leaf Gaming": "back001.jpg",
+    "Destiny": "back002.jpg",
+    "Stormtrooper": "back003.jpg",
+    "Supreme & XL": "back004.jpg",
+    "City Lights": "back005.jpg",
+    "Gotham City": "back006.jpg",
+    "Anime 1": "back007.jpg",
+    "Anime 2": "back008.jpg",
+    "Simpson": "back009.jpg",
+    "Aventador": "back010.jpg",
+    "LaFerrari & McLaren": "back011.jpg",
+    "BMW M5": "back012.jpg",
+    "Ferrari 458": "back013.jpg",
+    "Ferrari 488": "back014.jpg",
+    "Aurora Skies": "back015.jpg",
+    "Abstract 1": "back016.jpg",
+    "Abstract 2": "back017.jpg",
+    "Abstract 3": "back018.jpg",
+    "Abstract 4": "back019.jpg",
+    "Abstract 5": "back020.jpg",
+    "Custom URL": "URL"
+  },
+  "background_default": {
+    "label": "Green Leaf Gaming",
+    "value": "back001.jpg"
+  },
+
+
+  "coque": {
+    "Sansumg S8": "s8.png",
+    "Iphone X": "iphonex.png"
+  },
+  "coque_default": {
+    "label": "Samsung S8",
+    "value": "s8.png"
+  },
+
+  "removed911call": [
+    {
+      "title": "Call 911",
+      "eventName": "gcphone:autoCallNumber",
+      "type": {
+        "number": "911"
+      }
+    }
+  ],
+
+
+  "serviceCall": [
+    {
+      "display": "Police",
+      "icon": "/html/static/img/icons_app/contacts.png",
+      "subMenu": [
+        {
+          "title": "Send A Message",
+          "eventName": "esx_addons_gcphone:call",
+          "type": {
+            "number": "police"
+          }
+        },
+        {
+          "title": "Send An Anonymous Message",
+          "eventName": "esx_addons_gcphone:anoncall",
+          "type": {
+            "number": "police"
+          }
+        }
+      ]
+    },
+    {
+      "display": "Ambulance",
+      "backgroundColor": "red",
+      "subMenu": [
+        {
+          "title": "Send A Message",
+          "eventName": "esx_addons_gcphone:call",
+          "type": {
+            "number": "ambulance"
+          }
+        },
+        {
+          "title": "Send An Anonymous Message",
+          "eventName": "esx_addons_gcphone:anoncall",
+          "type": {
+            "number": "ambulance"
+          }
+        }
+      ]
+    },
+    {
+      "display": "Public Works(Tow)",
+      "backgroundColor": "orange",
+      "subMenu": [
+        {
+          "title": "Send A Message",
+          "eventName": "esx_addons_gcphone:call",
+          "type": {
+            "number": "mecano"
+          }
+        }
+      ]
+    },
+    {
+      "display": "Taxi/Rideshare",
+      "backgroundColor": "yellow",
+      "subMenu": [
+        {
+          "title": "Send A Message",
+          "eventName": "esx_addons_gcphone:call",
+          "type": {
+            "number": "taxi"
+          }
+        }
+      ]
+    }
+  ],
+
+  "apps": [
+    {
+      "name": "Phone",
+      "icons": "/html/static/img/icons_app/call.png",
+      "routeName": "appels",
+      "inHomePage": true
+    },
+    {
+      "name": "Messages",
+      "icons": "/html/static/img/icons_app/sms.png",
+      "routeName": "messages",
+      "inHomePage": true,
+      "puceRef": "nbMessagesUnread"
+    },
+    {
+      "name": "Contacts",
+      "icons": "/html/static/img/icons_app/contacts.png",
+      "routeName": "contacts",
+      "inHomePage": true
+    },
+    {
+      "name": "Twitter",
+      "fr_FR__name": "Twitter",
+      "en_US__name": "Twitter",
+      "icons": "/html/static/img/icons_app/twitter.png",
+      "routeName": "twitter.splash",
+      "inHomePage": true
+    },
+    {
+      "name": "Settings",
+      "icons": "/html/static/img/icons_app/settings.png",
+      "routeName": "parametre",
+      "inHomePage": false
+    },
+    {
+      "name": "Bank",
+      "icons": "/html/static/img/icons_app/bank.png",
+      "routeName": "bank",
+      "inHomePage": false,
+      "enabled": true
+    },
+    {
+      "name": "Stock Exchange",
+      "icons": "/html/static/img/icons_app/bourse.png",
+      "routeName": "bourse",
+      "enabled": false
+    },
+    {
+      "name": "Photo",
+      "icons": "/html/static/img/icons_app/photo.png",
+      "routeName": "photo"
+    },
+    {
+      "name": "Dark Chat",
+      "icons": "/html/static/img/icons_app/tchat.png",
+      "routeName": "tchat"
+    },
+    {
+      "name": "9GAG",
+      "icons": "/html/static/img/icons_app/9gag.png",
+      "routeName": "9gag"
+    }
+  ],
+  "language": {
+    "fr_FR": {
+      "NAME": "English",
+      "PHONE_WARNING_MESSAGE": "...",
+      "PHONE_WARNING_MESSAGE_MESS": "Messages",
+      "CONFIRM": "Confirm",
+      "CANCEL": "Cancel",
+      "APP_CONFIG_TITLE": "System",
+      "APP_CONFIG_MY_MUNBER": "My Number",
+      "APP_CONFIG_WALLPAPER": "Wallpapers",
+      "APP_CONFIG_CASE": "Phone Case",
+      "APP_CONFIG_ZOOM": "Zoom",
+      "APP_CONFIG_VOLUME": "Volume",
+      "APP_CONFIG_LANGUAGE": "Language",
+      "APP_CONFIG_RESET": "Reset Device",
+      "APP_CONFIG_RESET_CONFIRM": "ERASE ALL DATA",
+
+      "APP_PHONE_CALL": "Call",
+      "APP_PHONE_DELETE": "Erase",
+      "APP_PHONE_DELETE_ALL": "Erase all.",
+      "APP_PHONE_TITLE": "Phone",
+      "APP_PHONE_MENU_FAVORITES": "Favorites",
+      "APP_PHONE_MENU_RECENTS": "Recents",
+      "APP_PHONE_MENU_CONTACTS": "Contacts",
+      "APP_PHONE_ENTER_NUMBER": "Enter a number",
+      "APP_BANK_TITLE": "Bank",
+      "APP_BOURSE_TITLE": "Stock Market",
+      "APP_CONTACT_TITLE": "Contact",
+      "APP_CONTACT_NEW": "New Contact",
+      "APP_CONTACT_EDIT": "Modify Contact",
+      "APP_CONTACT_SAVE": "Save",
+      "APP_CONTACT_CANCEL": "Cancel",
+      "APP_CONTACT_DELETE": "Remove",
+      "APP_CONTACT_LABEL_NAME": "Contact Name",
+      "APP_CONTACT_LABEL_NUMBER": "Number",
+      "APP_MESSAGE_TITLE": "Messages",
+      "APP_MESSAGE_NEW_MESSAGE": "New Message",
+      "APP_MESSAGE_ERASE_CONVERSATION": "Erase The Conversation",
+      "APP_MESSAGE_ERASE_ALL_CONVERSATIONS": "ERASE All Conversations",
+
+      "APP_MESSAGE_SEND_GPS": "Send GPS Coordinates",
+      "APP_MESSAGE_SET_GPS": "SET GPS",
+      "APP_MESSAGE_ZOOM_IMG": "Zoom",
+      "APP_MESSAGE_DELETE": "Erase",
+      "APP_MESSAGE_SMS": "SMS",
+      "APP_MESSAGE_CONTACT_TITLE": "Contacts",
+      "APP_MESSAGE_CONTRACT_ENTER_NUMBER": "Enter a Number",
+      "APP_MESSAGE_PLACEHOLDER_ENTER_MESSAGE": "Enter a message",
+
+
+      "APP_DARKTCHAT_TITLE": "Dark Tchat",
+      "APP_DARKTCHAT_NEW_CHANNEL": "Add channel",
+      "APP_DARKTCHAT_DELETE_CHANNEL": "Delete channel",
+      "APP_DARKTCHAT_CANCEL": "Cancel",
+      "APP_DARKTCHAT_PLACEHOLDER_ENTER_MESSAGE": "Enter a message",
+
+      "APP_TWITTER_NAME": "Twitter",
+      "APP_TWITTER_VIEW_TWITTER": "Twitter",
+      "APP_TWITTER_VIEW_TOP_TWEETS": "Top Tweets",
+      "APP_TWITTER_VIEW_TWEETER": "Publish",
+      "APP_TWITTER_VIEW_SETTING": "Settings",
+      "APP_TWITTER_NEW_ACCOUNT_USERNAME": "Username (More than 4 characters.)",
+      "APP_TWITTER_NEW_ACCOUNT_PASSWORD": "Password (More than 6 characters.)",
+      "APP_TWITTER_NEW_ACCOUNT_PASSWORD_CONFIRM": "Confirm Password",
+      "APP_TWITTER_NEW_ACCOUNT_AVATAR": "URL of your avatar",
+      "APP_TWITTER_PLACEHOLDER_MESSAGE": "What's on your mind?",
+      "APP_TWITTER_BUTTON_ACTION_TWEETER": "Publish",
+      "APP_TWITTER_ACCOUNT_LOGIN": "Login To Twitter",
+      "APP_TWITTER_ACCOUNT_LOGOUT": "Logout From Twitter",
+      "APP_TWITTER_ACCOUNT_PARAM": "My Account",
+      "APP_TWITTER_ACCOUNT_AVATAR": "Change Avatar",
+      "APP_TWITTER_ACCOUNT_CHANGE_PASSWORD": "Change Password",
+      "APP_TWITTER_ACCOUNT_NEW": "New Account",
+      "APP_TWIITER_ACCOUNT_SAVE": "Registration",
+      "APP_TWIITER_ACCOUNT_CREATE": "Create The Account",
+      "APP_TWIITER_ACCOUNT_CANCEL": "Abort",
+      "APP_TWITTER_ACCOUNT_USERNAME": "Username",
+      "APP_TWITTER_ACCOUNT_PASSWORD": "Password",
+      "APP_TWITTER_NOTIFICATION": "Notification",
+      "APP_TWITTER_NOTIFICATION_WHEN": "Notification Settings",
+      "APP_TWITTER_NOTIFICATION_ALL": "All Tweets",
+      "APP_TWITTER_NOTIFICATION_MENTION": "Mentions Only",
+      "APP_TWITTER_NOTIFICATION_NEVER": "None",
+      "APP_TWITTER_NOTIFICATION_SOUND": "Play a sound",
+      "APP_TWITTER_NOTIFICATION_SOUND_YES": "Yes",
+      "APP_TWITTER_NOTIFICATION_SOUND_NO": "No",
+      "APP_TWITTER_NOTIF_ACCOUNT_CREATE_SUCCESS": "Your Twitter account has been created.",
+      "APP_TWITTER_NOTIF_ACCOUNT_CREATE_ERROR": "Your Twitter account could not be created (username already used?)",
+      "APP_TWITTER_NOTIF_LOGIN_SUCCESS": "You are connected to Twitter.",
+      "APP_TWITTER_NOTIF_LOGIN_ERROR": "Invalid account / password",
+      "APP_TWITTER_NOTIF_AVATAR_SUCCESS": "Your avatar has been changed!",
+      "APP_TWITTER_NOTIF_NEW_PASSWORD_SUCCESS": "Your password has been changed.",
+      "APP_TWITTER_NOTIF_NEW_PASSWORD_ERROR": "Oops.... Your password could not be changed.",
+      "APP_TWITTER_NOTIF_NEW_PASSWORD_MISS_MATCH": "Passwords do not match",
+      "APP_TWITTER_NOTIF_NEW_PASSWORD_LENGTH_ERROR": "Password too short",
+
+      "TIMEAGO": [
+        "just now",
+        [ "%s second ago", "%s seconds ago" ],
+        [ "%s minute ago", "%s minutes ago" ],
+        [ "%s hour ago", "%s hours ago" ],
+        [ "%s day ago", "%s days ago" ],
+        [ "%s week ago", "%s weeks ago" ],
+        [ "%s month ago", "%s months ago" ],
+        [ "%s year ago", "%s years ago" ]
+      ]
+    }
+  }
+}
